@@ -1,7 +1,2 @@
-import { tableArn } from '..';
-
-export const nftTableDynamoDBReadPolicies = {
-  Effect: 'Allow',
-  Resource: [tableArn],
-  Action: ['dynamodb:GetItem', 'dynamodb:Query'],
-};
+export { nftTableDynamoDBWritePolicies } from "./NftTableDynamoDBWritePolicies";
+export { nftTableDynamoDBReadPolicies } from "./NftTableDynamoDBReadPolicies";
