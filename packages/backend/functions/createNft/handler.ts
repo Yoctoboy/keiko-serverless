@@ -1,7 +1,7 @@
 import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb";
 import crypto from 'crypto'
 
-const client = new DynamoDBClient({ region: process.env.REGION });
+const client = new DynamoDBClient({});
 
 const randomIntFromInterval = (min: number, max: number) => {
     return Math.floor(Math.random() * (max - min + 1) + min);

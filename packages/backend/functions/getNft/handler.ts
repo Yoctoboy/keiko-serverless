@@ -1,7 +1,7 @@
 import { DynamoDBClient, QueryCommand } from '@aws-sdk/client-dynamodb';
 import { unmarshall } from '@aws-sdk/util-dynamodb';
 
-const client = new DynamoDBClient({ region: process.env.REGION });
+const client = new DynamoDBClient({});
 
 export const main = async (): Promise<any> => {
   const params = {

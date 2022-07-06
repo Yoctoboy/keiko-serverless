@@ -1,6 +1,6 @@
 import { getHandlerPath } from 'libs/configHelper/getHandlerPath';
+import { tableName } from 'resources';
 import { nftTableDynamoDBWritePolicies } from 'resources/policies';
-import { tableName } from 'resources/index';
 
 
 export const createNft = {
@@ -15,7 +15,7 @@ export const createNft = {
         },
     ],
     environment: {
-        NFT_TABLE_NAME: tableName,
         REGION: 'eu-west-1',
+        NFT_TABLE_NAME: tableName
     },
 };
